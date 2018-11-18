@@ -4,9 +4,13 @@
 #define W2L 5 // word 1 length
 
 
-char W1[] = "kerem";
-char W2[] = "merek";
-int SolveM[W1L+1][W2L+1];
+int min(int, int ,int); // return min of values
+int solve(); // solve the problem and return the min distance
+void printM(); // print Matrix
+
+char W1[] = "kerem"; // word 1
+char W2[] = "merek"; // word 2
+int SolveM[W1L+1][W2L+1]; // 
 
 int min(int x, int y, int z)
 {
@@ -39,9 +43,7 @@ void printM()
 	{
 		puts("");
 		for(int j=0;j<=W2L;j++)
-		{
 			printf("%d ",SolveM[i][j]);
-		}
 	}
 }
 
